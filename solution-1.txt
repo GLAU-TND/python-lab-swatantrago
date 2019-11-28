@@ -1,0 +1,12 @@
+class MyException(BaseException):
+    def __init__(self):
+        print("Custom Exception Occurred")
+        
+def Xyz(a,b):
+    
+    sum=a+b
+    if sum<150:
+        raise MyException()
+    else:
+        print("Sum=",sum)
+Xyz(int(input("Enter First NUmber")),int(input('Enter secomd number')))
